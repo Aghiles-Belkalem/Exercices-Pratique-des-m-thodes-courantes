@@ -1,0 +1,20 @@
+const mysteriousString = "iu@zfiz)!uzqzf!snoi??alutargnocze&gfuzyafzygfzmgfu%f";
+const table = mysteriousString.split("");
+console.log(table);
+
+const step1 = mysteriousString.slice(15, 31);
+ console.log('step 1 :', step1);
+ const step2 = step1.split("");
+console.log('step 2 :', step2);
+
+step2.splice(4, 2, "t");
+console.log(step2.join(""));
+
+const step3 = step2.slice(0, 17);
+console.log('step 3 : ', step3);
+
+const step4 = step3.reverse();
+console.log('step 4 : ', step4);
+
+const step5 = step4.join("");
+console.log('step 5 : ', step5);
